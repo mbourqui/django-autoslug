@@ -10,10 +10,12 @@
 #
 
 # django
+import datetime
 from django.core.exceptions import ImproperlyConfigured
 from django.db.models import ForeignKey
 from django.db.models.fields import FieldDoesNotExist, DateField
 from django.template.defaultfilters import slugify as django_slugify
+from django.utils.timezone import localtime, is_aware
 
 try:
     # i18n-friendly approach
@@ -116,7 +118,12 @@ def get_uniqueness_lookups(field, instance, unique_with):
         value = getattr(instance, field_name)
         if not value:
             if other_field.blank:
-                field_object = instance._meta.get_field(field_name)
+                try:
+                    field_object = instance._meta.get_field(field_name)
+                # For Django < 1.10
+                except AttributeError:
+                    field_object, model, direct, m2m = instance._meta.get_field_by_name(
+                        field_name)
                 if isinstance(field_object, ForeignKey):
                     lookup = '%s__isnull' % field_name
                     yield lookup, True
@@ -128,6 +135,8 @@ def get_uniqueness_lookups(field, instance, unique_with):
                              % (instance._meta.object_name, field.name,
                                 instance._meta.object_name, field_name,
                                 field.name))
+        if isinstance(value, datetime.datetime) and is_aware(value):
+            value = localtime(value)
         if isinstance(other_field, DateField):    # DateTimeField is a DateField subclass
             inner_lookup = inner_lookup or 'day'
 
