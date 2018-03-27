@@ -3,9 +3,9 @@
 #
 #  Copyright (c) 2008—2015 Andy Mikhailenko and contributors
 #
-#  This file is part of django-autoslug.
+#  This file is part of django-autoslugged.
 #
-#  django-autoslug is free software under terms of the GNU Lesser
+#  django-autoslugged is free software under terms of the GNU Lesser
 #  General Public License version 3 (LGPLv3) as published by the Free
 #  Software Foundation. See the file README for copying conditions.
 #
@@ -16,12 +16,17 @@ from setuptools import setup
 
 from _version_helper import __version__
 
+REPO_URL = "https://github.com/mbourqui/django-autoslugged/"
+
 readme = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 
+# allow setup.py to be run from any path
+os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
+
 setup(
-    name='django-autoslug',
+    name='django-autoslugged',
     version=__version__,
-    packages=['autoslug'],
+    packages=['autoslugged'],
 
     requires=['python (>= 2.7)', 'django (>= 1.7.10)'],
     # in case you want to use slugify() with support for transliteration:
@@ -31,14 +36,14 @@ setup(
     },
     description='An automated slug field for Django.',
     long_description=readme,
-    author='Andy Mikhailenko',
-    author_email='neithere@gmail.com',
-    url='https://github.com/neithere/django-autoslug/',
-    download_url='https://github.com/neithere/django-autoslug/archive/master.zip',
+    author='Marc Bourqui',
+    author_email='pypi.kemar@bourqui.org',
+    url=REPO_URL,
+    download_url=REPO_URL + 'releases/tag/v' + __version__,
     license='GNU Lesser General Public License (LGPL), Version 3',
     keywords='django field slug auto unique transliteration i18n',
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Framework :: Django :: 1.9',

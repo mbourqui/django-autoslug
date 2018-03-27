@@ -2,9 +2,9 @@
 #
 #  Copyright (c) 2008—2015 Andy Mikhailenko
 #
-#  This file is part of django-autoslug.
+#  This file is part of django-autoslugged.
 #
-#  django-autoslug is free software under terms of the GNU Lesser
+#  django-autoslugged is free software under terms of the GNU Lesser
 #  General Public License version 3 (LGPLv3) as published by the Free
 #  Software Foundation. See the file README for copying conditions.
 #
@@ -26,8 +26,8 @@ except ImportError:
     modeltranslation_utils = None
 
 # this app
-from autoslug.settings import slugify, autoslug_modeltranslation_enable
-from autoslug import utils
+from autoslugged.settings import slugify, autoslug_modeltranslation_enable
+from autoslugged import utils
 
 __all__ = ['AutoSlugField']
 
@@ -98,7 +98,7 @@ class AutoSlugField(SlugField):
     .. code-block:: python
 
         from django.db import models
-        from autoslug import AutoSlugField
+        from autoslugged import AutoSlugField
 
         class Article(models.Model):
             '''An article with title, date and slug. The slug is not totally
@@ -168,7 +168,7 @@ class AutoSlugField(SlugField):
             pass
 
         # autoslugify value using custom `slugify` function
-        from autoslug.settings import slugify as default_slugify
+        from autoslugged.settings import slugify as default_slugify
         def custom_slugify(value):
             return default_slugify(value).replace('-', '_')
         slug = AutoSlugField(slugify=custom_slugify)
@@ -309,7 +309,7 @@ class AutoSlugField(SlugField):
             'populate_from': 'None' if callable(self.populate_from) else repr(self.populate_from),
             'unique_with': repr(self.unique_with)
         })
-        return ('autoslug.fields.AutoSlugField', args, kwargs)
+        return ('autoslugged.fields.AutoSlugField', args, kwargs)
 
 
 def modeltranslation_update_slugs(sender, **kwargs):

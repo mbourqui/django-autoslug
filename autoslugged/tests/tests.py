@@ -2,9 +2,9 @@
 #
 #  Copyright (c) 2008—2015 Andy Mikhailenko
 #
-#  This file is part of django-autoslug.
+#  This file is part of django-autoslugged.
 #
-#  django-autoslug is free software under terms of the GNU Lesser
+#  django-autoslugged is free software under terms of the GNU Lesser
 #  General Public License version 3 (LGPLv3) as published by the Free
 #  Software Foundation. See the file README for copying conditions.
 #
@@ -276,7 +276,7 @@ class AutoSlugModelTranslationTestCase(TestCase):
 
     def test_regression_33(self):
         """
-        https://bitbucket.org/neithere/django-autoslug/issues/33/
+        https://bitbucket.org/neithere/django-autoslugged/issues/33/
 
         Autoslug tries to populate localized AutoSlugField that is not marked
         as translatable by modeltranslation.

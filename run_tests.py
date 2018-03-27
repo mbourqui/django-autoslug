@@ -19,7 +19,7 @@ conf = dict(
     USE_TZ = False,
     INSTALLED_APPS = [
         'modeltranslation',
-        'autoslug'
+        'autoslugged'
     ],
     DATABASES = dict(
         default = dict(
@@ -35,4 +35,4 @@ settings.configure(**conf)
 django.setup()
 
 if __name__ == "__main__":
-    call_command('test', 'autoslug')
+    call_command('test', 'autoslugged')

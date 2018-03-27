@@ -2,14 +2,14 @@
 #
 #  Copyright (c) 2008—2015 Andy Mikhailenko
 #
-#  This file is part of django-autoslug.
+#  This file is part of django-autoslugged.
 #
-#  django-autoslug is free software under terms of the GNU Lesser
+#  django-autoslugged is free software under terms of the GNU Lesser
 #  General Public License version 3 (LGPLv3) as published by the Free
 #  Software Foundation. See the file README for copying conditions.
 #
 """
-Django settings that affect django-autoslug:
+Django settings that affect django-autoslugged:
 
 `AUTOSLUG_SLUGIFY_FUNCTION`
   Allows to define a custom slugifying function.
@@ -33,24 +33,24 @@ Django settings that affect django-autoslug:
   * `pytils.translit.slugify()` if pytils_ is available;
   * `django.template.defaultfilters.slugify()` bundled with Django.
 
-  django-autoslug also ships a couple of slugify functions that use
+  django-autoslugged also ships a couple of slugify functions that use
   the translitcodec_ Python library, e.g.::
 
      # using as many characters as needed to make a natural replacement
-     AUTOSLUG_SLUGIFY_FUNCTION = 'autoslug.utils.translit_long'
+     AUTOSLUG_SLUGIFY_FUNCTION = 'autoslugged.utils.translit_long'
 
      # using the minimum number of characters to make a replacement
-     AUTOSLUG_SLUGIFY_FUNCTION = 'autoslug.utils.translit_short'
+     AUTOSLUG_SLUGIFY_FUNCTION = 'autoslugged.utils.translit_short'
 
      # only performing single character replacements
-     AUTOSLUG_SLUGIFY_FUNCTION = 'autoslug.utils.translit_one'
+     AUTOSLUG_SLUGIFY_FUNCTION = 'autoslugged.utils.translit_one'
 
 .. _Unidecode: http://pypi.python.org/pypi/Unidecode
 .. _pytils: http://pypi.python.org/pypi/pytils
 .. _translitcodec: http://pypi.python.org/pypi/translitcodec
 
 `AUTOSLUG_MODELTRANSLATION_ENABLE`
-  Django-autoslug support of modeltranslation_ is still experimental.
+  Django-autoslugged support of modeltranslation_ is still experimental.
   If you wish to enable it, please set this option to `True` in your project
   settings.  Default is `False`.
 
@@ -65,8 +65,8 @@ except ImportError:  # < django 2.0
     from django.core.urlresolvers import get_callable
 
 # use custom slugifying function if any
-slugify_function_path = getattr(settings, 'AUTOSLUG_SLUGIFY_FUNCTION', 'autoslug.utils.slugify')
+slugify_function_path = getattr(settings, 'AUTOSLUGGED_SLUGIFY_FUNCTION', 'autoslugged.utils.slugify')
 slugify = get_callable(slugify_function_path)
 
 # enable/disable modeltranslation support
-autoslug_modeltranslation_enable = getattr(settings, 'AUTOSLUG_MODELTRANSLATION_ENABLE', False)
+autoslug_modeltranslation_enable = getattr(settings, 'AUTOSLUGGED_MODELTRANSLATION_ENABLE', False)

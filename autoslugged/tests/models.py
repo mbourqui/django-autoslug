@@ -3,8 +3,8 @@ from django.db.models import (Model, CharField, DateField, DateTimeField,
 
 
 # this app
-from autoslug import AutoSlugField
-from autoslug.settings import slugify as default_slugify
+from autoslugged import AutoSlugField
+from autoslugged.settings import slugify as default_slugify
 
 
 class SimpleModel(Model):

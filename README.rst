@@ -1,26 +1,26 @@
-django-autoslug
+django-autoslugged
 ~~~~~~~~~~~~~~~
 
-.. image:: https://img.shields.io/coveralls/neithere/django-autoslug.svg
-    :target: https://coveralls.io/r/neithere/django-autoslug
+.. image:: https://img.shields.io/coveralls/mbourqui/django-autoslugged.svg
+    :target: https://coveralls.io/r/mbourqui/django-autoslugged
 
-.. image:: https://img.shields.io/travis/neithere/django-autoslug.svg
-    :target: https://travis-ci.org/neithere/django-autoslug
+.. image:: https://img.shields.io/travis/mbourqui/django-autoslugged.svg
+    :target: https://travis-ci.org/mbourqui/django-autoslugged
 
-.. image:: https://img.shields.io/pypi/format/django-autoslug.svg
-    :target: https://pypi.python.org/pypi/django-autoslug
+.. image:: https://img.shields.io/pypi/format/django-autoslugged.svg
+    :target: https://pypi.python.org/pypi/django-autoslugged
 
-.. image:: https://img.shields.io/pypi/status/django-autoslug.svg
-    :target: https://pypi.python.org/pypi/django-autoslug
+.. image:: https://img.shields.io/pypi/status/django-autoslugged.svg
+    :target: https://pypi.python.org/pypi/django-autoslugged
 
-.. image:: https://img.shields.io/pypi/v/django-autoslug.svg
-    :target: https://pypi.python.org/pypi/django-autoslug
+.. image:: https://img.shields.io/pypi/v/django-autoslugged.svg
+    :target: https://pypi.python.org/pypi/django-autoslugged
 
-.. image:: https://img.shields.io/pypi/pyversions/django-autoslug.svg
-    :target: https://pypi.python.org/pypi/django-autoslug
+.. image:: https://img.shields.io/pypi/pyversions/django-autoslugged.svg
+    :target: https://pypi.python.org/pypi/django-autoslugged
 
-.. image:: https://img.shields.io/pypi/dd/django-autoslug.svg
-    :target: https://pypi.python.org/pypi/django-autoslug
+.. image:: https://img.shields.io/pypi/dd/django-autoslugged.svg
+    :target: https://pypi.python.org/pypi/django-autoslugged
 
 .. image:: https://readthedocs.org/projects/django-autoslug/badge/?version=stable
     :target: http://django-autoslug.readthedocs.org/en/stable/
@@ -28,7 +28,7 @@ django-autoslug
 .. image:: https://readthedocs.org/projects/django-autoslug/badge/?version=latest
     :target: http://django-autoslug.readthedocs.org/en/latest/
 
-Django-autoslug is a reusable Django library that provides an improved
+Django-autoslugged is a reusable Django library that provides an improved
 slug field which can automatically:
 
 a) populate itself from another field,
@@ -44,13 +44,13 @@ Requirements
 
 *Django 1.7.10* or higher.
 
-It may be possible to successfully use django-autoslug in other environments
+It may be possible to successfully use django-autoslugged in other environments
 but they are not tested.
 
 .. note::
 
   PyPy3 is not officially supported only because there were some problems with
-  permissions and `__pycache__` on CI unrelated to django-autoslug itself.
+  permissions and `__pycache__` on CI unrelated to django-autoslugged itself.
 
 Examples
 --------
@@ -60,7 +60,7 @@ A simple example:
 .. code-block:: python
 
     from django.db.models import CharField, Model
-    from autoslug import AutoSlugField
+    from autoslugged import AutoSlugField
 
     class Article(Model):
         title = CharField(max_length=200)
@@ -72,7 +72,7 @@ More complex example:
 
     from django.db.models import CharField, DateField, ForeignKey, Model
     from django.contrib.auth.models import User
-    from autoslug import AutoSlugField
+    from autoslugged import AutoSlugField
 
     class Article(Model):
         title = CharField(max_length=200)
@@ -98,15 +98,19 @@ Please feel free to file issues and/or submit patches.
 
 See `CONTRIBUTING.rst` for hints related to the preferred workflow.
 
+Since the original project ([django-autoslug](https://github.com/neithere/django-autoslug))
+was not maintained anymore but I was using it in several projects, I forked it and renamed it
+in order to publish a new release on PyPI.
+
 Licensing
 ---------
 
-Django-autoslug is free software; you can redistribute it and/or
+Django-autoslugged is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public License as
 published by the Free Software Foundation; either version 3 of the
 License, or (at your option) any later version.
 
-Django-autoslug is distributed in the hope that it will be useful,
+Django-autoslugged is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 Lesser General Public License for more details.
