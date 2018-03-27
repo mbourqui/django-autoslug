@@ -1,25 +1,14 @@
 # django-autoslugged
 
-[![Python](https://img.shields.io/badge/Python-3.4,3.5,3.6-blue.svg?style=flat-square)](/)
+[![Python](https://img.shields.io/badge/Python-2.7,3.4,3.5,3.6-blue.svg?style=flat-square)](/)
 [![Django](https://img.shields.io/badge/Django-1.8,1.9,1.10,1.11,2.0-blue.svg?style=flat-square)](/)
+[![PyPI](https://img.shields.io/pypi/v/django-autoslugged.svg?style=flat-square)](https://pypi.org/project/django-autoslugged)
+[![image](https://img.shields.io/pypi/status/django-autoslugged.svg)](https://pypi.org/project/django-autoslugged)
+[![Build Status](https://travis-ci.org/mbourqui/django-autoslugged.svg?branch=master)](https://travis-ci.org/mbourqui/django-autoslugged)
+[![Coverage Status](https://coveralls.io/repos/github/mbourqui/django-autoslugged/badge.svg?branch=master)](https://coveralls.io/github/mbourqui/django-autoslugged?branch=master)
 
-![image](https://img.shields.io/coveralls/mbourqui/django-autoslugged.svg%0A%20:target:%20https://coveralls.io/r/mbourqui/django-autoslugged)
-
-![image](https://img.shields.io/travis/mbourqui/django-autoslugged.svg%0A%20:target:%20https://travis-ci.org/mbourqui/django-autoslugged)
-
-![image](https://img.shields.io/pypi/format/django-autoslugged.svg%0A%20:target:%20https://pypi.python.org/pypi/django-autoslugged)
-
-![image](https://img.shields.io/pypi/status/django-autoslugged.svg%0A%20:target:%20https://pypi.python.org/pypi/django-autoslugged)
-
-![image](https://img.shields.io/pypi/v/django-autoslugged.svg%0A%20:target:%20https://pypi.python.org/pypi/django-autoslugged)
-
-![image](https://img.shields.io/pypi/pyversions/django-autoslugged.svg%0A%20:target:%20https://pypi.python.org/pypi/django-autoslugged)
-
-![image](https://img.shields.io/pypi/dd/django-autoslugged.svg%0A%20:target:%20https://pypi.python.org/pypi/django-autoslugged)
-
-![image](https://readthedocs.org/projects/django-autoslug/badge/?version=stable%0A%20:target:%20http://django-autoslug.readthedocs.org/en/stable/)
-
-![image](https://readthedocs.org/projects/django-autoslug/badge/?version=latest%0A%20:target:%20http://django-autoslug.readthedocs.org/en/latest/)
+![Docs stable](https://readthedocs.org/projects/django-autoslug/badge/?version=stable%0A%20:target:%20http://django-autoslug.readthedocs.org/en/stable/)
+![Docs latest](https://readthedocs.org/projects/django-autoslug/badge/?version=latest%0A%20:target:%20http://django-autoslug.readthedocs.org/en/latest/)
 
 Django-autoslugged is a reusable Django library that provides an
 improved slug field which can automatically:
