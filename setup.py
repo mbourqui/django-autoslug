@@ -10,15 +10,21 @@
 #  Software Foundation. See the file README for copying conditions.
 #
 
-import io
 import os
+
 from setuptools import setup
 
 from _version_helper import __version__
 
 REPO_URL = "https://github.com/mbourqui/django-autoslugged/"
 
-readme = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
+README = ''
+for ext in ['md', 'rst']:
+    try:
+        with open(os.path.join(os.path.dirname(__file__), 'README.' + ext)) as readme:
+            README = readme.read()
+    except FileNotFoundError as fnfe:
+        pass
 
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
@@ -35,7 +41,7 @@ setup(
         'translitcodec': 'translitcodec >= 0.3',
     },
     description='An automated slug field for Django.',
-    long_description=readme,
+    long_description=README,
     author='Marc Bourqui',
     author_email='pypi.kemar@bourqui.org',
     url=REPO_URL,
