@@ -1,5 +1,5 @@
--r basic.txt
--r devel.txt
+-r base.txt
+-r dev.txt
 
 Sphinx==1.1.2
 Sphinx-PyPI-upload==0.2.1

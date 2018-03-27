@@ -1,5 +1,8 @@
 # django-autoslugged
 
+[![Python](https://img.shields.io/badge/Python-3.4,3.5,3.6-blue.svg?style=flat-square)](/)
+[![Django](https://img.shields.io/badge/Django-1.8,1.9,1.10,1.11,2.0-blue.svg?style=flat-square)](/)
+
 ![image](https://img.shields.io/coveralls/mbourqui/django-autoslugged.svg%0A%20:target:%20https://coveralls.io/r/mbourqui/django-autoslugged)
 
 ![image](https://img.shields.io/travis/mbourqui/django-autoslugged.svg%0A%20:target:%20https://travis-ci.org/mbourqui/django-autoslugged)
@@ -30,9 +33,8 @@ The field is highly configurable.
 Requirements
 ============
 
-*Python 2.7, 3.5 or PyPy*.
-
-*Django 1.7.10* or higher.
+* [Python][] >= 2.7 or PyPy
+* [Django][] >= 1.8
 
 It may be possible to successfully use django-autoslugged in other
 environments but they are not tested.
@@ -110,3 +112,7 @@ General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with this program; see the file COPYING.LESSER. If not, see [GNU
 licenses](http://gnu.org/licenses/).
+
+
+  [python]:     https://www.python.org/             "Python"
+  [django]:     https://www.djangoproject.com/      "Django"

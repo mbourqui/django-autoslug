@@ -1,2 +1,2 @@
--r basic.txt
--r devel.txt
+-r base.txt
+-r dev.txt

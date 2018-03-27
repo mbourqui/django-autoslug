@@ -9,27 +9,25 @@ import django
 from django.conf import settings
 from django.core.management import call_command
 
-
 gettext = lambda s: s
 conf = dict(
-    LANGUAGES = (
+    LANGUAGES=(
         ('ru', gettext('Russian')),
         ('en', gettext('English')),
     ),
-    USE_TZ = False,
-    INSTALLED_APPS = [
+    USE_TZ=False,
+    INSTALLED_APPS=[
         'modeltranslation',
         'autoslugged'
     ],
-    DATABASES = dict(
-        default = dict(
+    DATABASES=dict(
+        default=dict(
             ENGINE='django.db.backends.sqlite3',
             NAME=':memory:',
         ),
     ),
-    AUTOSLUG_SLUGIFY_FUNCTION = 'django.template.defaultfilters.slugify',
+    AUTOSLUG_SLUGIFY_FUNCTION='django.template.defaultfilters.slugify',
 )
-
 
 settings.configure(**conf)
 django.setup()
