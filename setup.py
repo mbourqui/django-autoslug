@@ -14,35 +14,37 @@ import io
 import os
 from setuptools import setup
 
-
 from _version_helper import __version__
-
 
 readme = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 
 setup(
-    name     = 'django-autoslug',
-    version  = __version__,
-    packages = ['autoslug'],
+    name='django-autoslug',
+    version=__version__,
+    packages=['autoslug'],
 
-    requires = ['python (>= 2.7)', 'django (>= 1.7.10)'],
+    requires=['python (>= 2.7)', 'django (>= 1.7.10)'],
     # in case you want to use slugify() with support for transliteration:
-    extras_require = {
+    extras_require={
         'cyrillic': 'pytils >= 0.2',
         'translitcodec': 'translitcodec >= 0.3',
     },
-    description  = 'An automated slug field for Django.',
-    long_description = readme,
-    author       = 'Andy Mikhailenko',
-    author_email = 'neithere@gmail.com',
-    url          = 'https://github.com/neithere/django-autoslug/',
-    download_url = 'https://github.com/neithere/django-autoslug/archive/master.zip',
-    license      = 'GNU Lesser General Public License (LGPL), Version 3',
-    keywords     = 'django field slug auto unique transliteration i18n',
-    classifiers  = [
+    description='An automated slug field for Django.',
+    long_description=readme,
+    author='Andy Mikhailenko',
+    author_email='neithere@gmail.com',
+    url='https://github.com/neithere/django-autoslug/',
+    download_url='https://github.com/neithere/django-autoslug/archive/master.zip',
+    license='GNU Lesser General Public License (LGPL), Version 3',
+    keywords='django field slug auto unique transliteration i18n',
+    classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Framework :: Django',
+        'Framework :: Django :: 1.9',
+        'Framework :: Django :: 1.10',
+        'Framework :: Django :: 1.11',
+        'Framework :: Django :: 2.0',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)',
         'Programming Language :: Python',
