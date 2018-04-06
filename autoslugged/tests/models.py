@@ -1,5 +1,5 @@
 from django.db.models import (Model, CharField, DateField, DateTimeField,
-                              BooleanField, ForeignKey, Manager)
+                              BooleanField, ForeignKey, Manager, CASCADE)
 
 
 # this app
