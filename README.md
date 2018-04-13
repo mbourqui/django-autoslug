@@ -2,8 +2,8 @@
 
 [![Python](https://img.shields.io/badge/Python-2.7,3.4,3.5,3.6-blue.svg?style=flat-square)](/)
 [![Django](https://img.shields.io/badge/Django-1.8,1.9,1.10,1.11,2.0-blue.svg?style=flat-square)](/)
-[![PyPI](https://img.shields.io/pypi/v/django-autoslugged.svg?style=flat-square)](https://pypi.org/project/django-autoslugged)
-[![image](https://img.shields.io/pypi/status/django-autoslugged.svg)](https://pypi.org/project/django-autoslugged)
+[![PyPIv](https://img.shields.io/pypi/v/django-autoslugged.svg?style=flat-square)](https://pypi.org/project/django-autoslugged)
+[![PyPIs](https://img.shields.io/pypi/status/django-autoslugged.svg)](https://pypi.org/project/django-autoslugged)
 [![Build Status](https://travis-ci.org/mbourqui/django-autoslugged.svg?branch=master)](https://travis-ci.org/mbourqui/django-autoslugged)
 [![Coverage Status](https://coveralls.io/repos/github/mbourqui/django-autoslugged/badge.svg?branch=master)](https://coveralls.io/github/mbourqui/django-autoslugged?branch=master)
 
