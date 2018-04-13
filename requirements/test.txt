@@ -1,2 +1,5 @@
 -r dev.txt
 -r optional.txt
+
+coverage
+coveralls
