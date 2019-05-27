@@ -17,28 +17,33 @@
 #==============================================================================
 #title          :pypi_packager.sh
 #description    :This script will build a source distribution and wheel. It
-#                converts a README.rst to README.rst for nice rendering on PyPI.
+#                converts a README.md to README.rst for nice rendering on PyPI.
 #author         :https://github.com/mbourqui
 #licence        :GNU GPL-3.0
 #date           :20170526
-#version        :1.2.0
+#version        :1.2.1
 #usage          :bash pypi_packager.sh
 #requires       :pandoc
 #==============================================================================
 
 PROGRAM_NAME=$(basename "$0")
-VERSION=1.2.0
+VERSION=1.2.1
 PROJECT_NAME=$(basename $(pwd))
 PACKAGE_NAME=${PROJECT_NAME//-/_}  # Replace all - with _
 
+copyright() {
+echo "$PROGRAM_NAME  Copyright (C) 2017-2018  Marc Bourqui"
+}
+
 usage() {
-echo "$PROGRAM_NAME  Copyright (C) 2017-2018  Marc Bourqui
+copyright
+echo "
 This program comes with ABSOLUTELY NO WARRANTY.
 This is free software, and you are welcome to redistribute it under certain
 conditions, see <http://www.gnu.org/licenses/> for details.
 
 Script to build source distribution and wheel for a python package. Also
-converts a README.rst to README.rst thanks to pandoc for nice rendering on PyPI.
+converts a README.md to README.rst thanks to pandoc for nice rendering on PyPI.
 
 Usage: $PROGRAM_NAME [-h,--help,-v,--version] [-s,--submit|-t,--test]
 
@@ -90,6 +95,9 @@ if [ -n "$SUBMIT" -a -n "$TEST" ]; then
     usage
     exit 1
 fi
+
+copyright
+echo "Thank you for using this utility"
 
 # Clear previous compilations to prevent potential issues and limit disk space
 # usage
