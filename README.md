@@ -1,7 +1,7 @@
 # django-autoslugged
 
 [![Python](https://img.shields.io/badge/Python-2.7,3.4,3.5,3.6-blue.svg?style=flat-square)](/)
-[![Django](https://img.shields.io/badge/Django-1.8,1.9,1.10,1.11,2.0-blue.svg?style=flat-square)](/)
+[![Django](https://img.shields.io/badge/Django-1.9,1.10,1.11,2.0-blue.svg?style=flat-square)](/)
 [![PyPIv](https://img.shields.io/pypi/v/django-autoslugged.svg?style=flat-square)](https://pypi.org/project/django-autoslugged)
 [![PyPIs](https://img.shields.io/pypi/status/django-autoslugged.svg)](https://pypi.org/project/django-autoslugged)
 [![Build Status](https://travis-ci.org/mbourqui/django-autoslugged.svg?branch=master)](https://travis-ci.org/mbourqui/django-autoslugged)

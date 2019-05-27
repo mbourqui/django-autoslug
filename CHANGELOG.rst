@@ -1,6 +1,16 @@
 Changelog
 ~~~~~~~~~
 
+Version 2.0.0 (2019.05.28)
+--------------------------
+
+Changed:
+- Renamed package to django-autoslugged
+
+Removed:
+- Support for Django 1.8
+
+
 Version 1.9.4-dev
 -----------------
 
