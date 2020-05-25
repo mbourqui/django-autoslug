@@ -10,6 +10,12 @@
 ![Docs stable](https://readthedocs.org/projects/django-autoslug/badge/?version=stable%0A%20:target:%20http://django-autoslug.readthedocs.org/en/stable/)
 ![Docs latest](https://readthedocs.org/projects/django-autoslug/badge/?version=latest%0A%20:target:%20http://django-autoslug.readthedocs.org/en/latest/)
 
+
+> # DEPRECATION NOTICE
+> Since the maintenance and development of the original project have resumed, this fork will not be maintained anymore.
+> Please switch to https://github.com/justinmayer/django-autoslug
+
+
 Django-autoslugged is a reusable Django library that provides an
 improved slug field which can automatically:
 

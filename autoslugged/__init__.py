@@ -11,5 +11,5 @@
 from autoslugged.fields import AutoSlugField
 
 
-__version__ = '2.0.0'
+__version__ = '2.0.0-post'
 __all__ = ['AutoSlugField']

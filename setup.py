@@ -49,7 +49,7 @@ setup(
     license='GNU Lesser General Public License (LGPL), Version 3',
     keywords='django field slug auto unique transliteration i18n',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 7 - Inactive',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Framework :: Django :: 1.9',

@@ -1,6 +1,11 @@
 Changelog
 ~~~~~~~~~
 
+Version 2.0.0-post (2020.05.25)
+-------------------------------
+Maintenance of the project is stopped
+
+
 Version 2.0.0 (2019.05.28)
 --------------------------
 
